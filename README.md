@@ -66,8 +66,90 @@ retail-pulp-optimization/
 
 The output includes the optimal allocation plan and total minimized shipping cost.
 
+
+
+
+
+
+# Retail Supply Optimization using Gurobi & PySpark
+
+This project tackles a retail supply chain optimization problem using **Gurobi Optimizer** integrated with **PySpark** for distributed processing. The objective is to find the best product allocation plan from multiple warehouses to multiple stores while minimizing total shipping cost.
+
+---
+
+## Problem Statement
+
+A retailer has a network of warehouses and stores. Each warehouse has a limited supply, and each store has a demand for products. The cost to ship each product from warehouse to store is provided. The goal is to minimize overall shipping cost under supply and demand constraints.
+
+---
+
+## Dataset
+
+Same dataset as in Project 1:
+- `Demand.csv`
+- `Supply.csv`
+- `ShippingCost.csv`
+
+---
+
+## Technologies Used
+
+- Python 3.x
+- Gurobi Optimizer
+- PySpark (Spark DataFrames)
+- Pandas
+- Jupyter Notebook
+
+---
+
+## Project Structure
+retail-gurobi-pyspark-optimization/
+│
+├── data/
+│ ├── Demand.csv
+│ ├── Supply.csv
+│ └── ShippingCost.csv
+│
+├── gurobi_pyspark_optimization.ipynb
+└── README.md
+
+
+---
+
+## How to Run
+
+1. Clone this repo.
+2. Install Gurobi and get a license: https://www.gurobi.com/downloads/
+3. Install Spark and dependencies:
+
+
+pip install pyspark
+pip install gurobipy
+
+
+4. Run the notebook: `gurobi_pyspark_optimization.ipynb`
+
+---
+
+## Solution Steps
+
+1. Load data using PySpark.
+2. Convert Spark DataFrames to dictionaries.
+3. Initialize Gurobi model.
+4. Define decision variables and constraints.
+5. Solve the optimization problem.
+6. Output the optimal shipping plan.
+
+---
+
+## Results
+
+- Displays product allocation for each warehouse-store pair.
+- Shows minimized total shipping cost.
+
 ---
 
 ## License
 
 MIT License
+
