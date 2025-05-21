@@ -2,7 +2,7 @@
 
 This project solves a supply chain optimization problem using **Linear Programming (LP)** with the **PuLP** library in Python. It aims to allocate inventory from warehouses to retail stores in an optimal way that minimizes shipping costs while meeting demand.
 
----
+--- 
 
 ## Problem Statement
 
